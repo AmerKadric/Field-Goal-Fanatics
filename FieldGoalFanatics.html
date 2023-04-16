@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <!--head of the website-->
+<head>
+<meta charset="utf-8">
+<!-- title of the website-->
+<title>Field Goal Fanatics</title>
+<!-- added the font right here-->
+<link href="http://fonts.googleapis.com/
+css?family=Marko+One" rel="stylesheet">
+<!-- added a picture to the website-->
+<!-- added the new style changes-->
+<!-- added and changed the size of h1 and h2-->
+<!-- added the backround inside of the body-->
+ <!-- added all the polka dots-->
+ <!-- added all of the elements of the bakery html doc-->
+<style>   
+  strong {
+ font-style: italic;
+ color: tomato;
+}
+/* added a main img to get rid of excess space*/
+@media screen and (min-width: 480px) { 
+main img {
+ float: left;
+ margin: 0 1em 1em 0; 
+}
+}
+/*added the img to help fit it better*/
+img[src*="barry.jpeg"] {
+    -webkit-shape-outside: ellipse(130px 95px at 50%50%); 
+    shape-outside: polygon(0px 0px, 197px 0px, 241px
+31px, 241px 68px, 226px 82px, 219px 131px, 250px
+142px, 250px 158px, 0px 158px);
+}
+html {
+ box-sizing: border-box;
+}
+* {
+ box-sizing: inherit;
+}
+/*added all of the header stuff*/
+header {
+    height: 15em; 
+    margin-top: 0;
+ padding: 3em 1em 2em 1em;
+ text-align: center;
+ background-color: rgba(255, 255, 255, 0.5);
+ background-image: url(helmet.png);
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    padding-bottom: .2em;
+}
+a:visited {
+  color: #937393;
+}
+a:hover,
+a:focus {
+  color: #c700f2;
+  background-color: #fff;
+}
+a:active {
+  color: #ff00ff;
+  background-color: #fff;
+}
+#about { color: teal; }
+#about p { font-style: italic; }
+.price {
+ font-family: Georgia, serif;
+ font-style: italic;
+ color: gray;
+}
+.label {
+ font-weight: bold;
+ font-variant: small-caps;
+ font-style: normal;
+}
+/*added everything to header p*/
+@media screen and (min-width: 600px) {
+header p {
+ margin-top: -12px;
+}
+p.warning, sup {
+ font-size: small;
+ color: red;
+}
+p.more {
+ clear: left;
+}
+dt strong { color: tomato; }
+/*added all of the stuff for the main body and aside*/
+/* added the borders for the main*/
+main {
+  font-family: 'Stint Ultra Expanded', cursive;
+  background-color: white;
+  line-height: 1.8em;
+  color: #555;
+  padding: 1em;
+  border: double 4px #EADDC4; 
+ border-radius: 25px; 
+ margin: 2.5%;
+  
+}
+h2 {
+ font-size: 1em;
+ color: #cc6600;
+}
+h3{
+    border-top: 1px solid;
+ border-left: 3px solid;
+ padding-left: 1em;
+ margin-top: 2.5em;
+}
+}
+/*added everything to the border*/
+aside {
+  /*background: url(football.png) repeat-y left top;*/
+  /*background-color: #F6F3ED;*/
+  padding: 1em;
+  padding-left: 45px;
+  border-top-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+/*added everything to the body*/
+body {
+    background-color: #d2dc9d;
+  
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
+    background-image: url(smallfootball.png);
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    margin: 0;
+
+    
+}
+/*added everything to header h1*/
+header h1 {
+ margin-top: 1.5em;
+}
+/*Added everything to ul*/
+/*this is where I added the flex stuff to the website*/
+nav ul {
+  margin: 0;
+ padding: 0;
+ list-style-type: none; 
+display: flex;
+justify-content: center;
+}
+@media screen and (min-width: 400px) {
+nav ul li a {
+ display: block;
+ border: 1px solid;
+ border-radius: .5em;
+ padding: .5em 1em;
+ margin: .5em;
+} 
+}
+#menu {
+  border: 3px solid #e5d7e7;
+  display: flex;
+  align-items: stretch;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section {
+  background: #F6F3ED;
+  margin: 10px;
+  padding: 20px;
+  border: 1px dotted maroon;
+  width: 270px;
+  display: flex;
+ flex-direction: column;
+}
+.title {
+  background-color: #efe7e3;
+  color: #F9AB33;
+  line-height: 4em;
+}
+.price {
+  font-weight: bold;
+  background: #F9AB33;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+/*added everything for the footer */
+footer {
+  color: #ae812c;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
+}
+h1 {
+    font-family: "Marko One", Georgia, serif;
+font-size: 1.5em;
+color: #095895;
+}
+table { border: 1px solid rgb(0, 0, 0); }
+
+ </style>
+    
+</head>
+<!-- body of the website-->
+
+     <!--added h1 and p to idenify the size and what the paragraphs are-->
+<h1><img src="football.png" alt="logo"> <br>Field Goal Fanatics</h1> 
+<!--added a picture to the website-->
+<video src="footballvideo.mp4" width="1550"
+height="200" controls loop> 
+ Sorry, your browser doesn't support HTML5 video.
+</video>
+<main>
+    <nav>
+        <ul>
+    <li><a href = "index.html">Home</a> </li>
+    <li><a href = "#menu">Items</a> </li>
+    <li><a href = "#order">Online Order</a> </li>
+    <li><a href = "#about">Contact </a></li>
+
+</ul>
+    </nav>
+<h2>The Sports Shop</h2>
+<p>The Field Goal Fanatics helps offer fans the newest and hottest gear for all NFL teams.
+    Styles of clothing changes seasonaly from long coats to short crop tops.</p>
+
+<h2>Pop up shop</h2>
+<p>We stop at all big tailgates around the US. <em>You have fun while we come to you.</em>
+    Prices are the same you do not have to worry about any upcharges.</p>
+
+<h1>Location and Hours</h1>
+<p>Detroit, Michigan;</p>
+Monday through Saturday 8 am to 9 pm; Sunday, 11 am to 5 pm
+</main>
+<main>
+<div id = "order">
+<h1>Online Order details</h1>
+<p>Shipped out from Detroit, Michigan</p>
+Shipping is 24/7 non stop ordering
+
+<!-- this is where I added the ordering page-->
+<form action="http://fieldgoalfanatics.com/
+football.php" method="POST">
+<!--added all of the new labels -->
+<fieldset><legend>Your information</legend>
+ <ul>
+<li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"> 
+</li>
+<li><label for="form-address">Address: </label><input type="text" name="customeraddress"id="form-address"> 
+</li>
+<li><label for="form-number">Number:</label> <input type="text" name="customernumber"id="form-number"> 
+</li>
+<li><label for="form-email">Email:</label> <input type="text" name="customeremail"id="form-email"> 
+</li>
+<li><label for="form-instructions">Instructions:</label> <input type="text" name="customerinstructions"id="form-instructions"> 
+</li>
+
+<li>Shipping instructions:<br>
+    <textarea name="instructions" rows="4" cols="60" 
+    maxlength="400" placeholder="No more than 400 
+    characters long"></textarea></li>
+</ul>
+</fieldset>
+    <h2>Design your dream shirt!</h2>
+    <fieldset>
+        <legend>shirt specs</legend>
+        <fieldset>
+    <legend>Color (only one)</legend> 
+    <ul>
+    <li><input type="radio" name="Shirt color" value="color"> Classic white</li>
+    <li><input type="radio" name="Shirt color" value="color"> Popular brown</li>
+    <li><input type="radio" name="Shirt color" value="color"> Jet Black</li>
+</ul>
+</fieldset>
+    design preference (as many as you want)
+    <li><input type="checkbox" name="design" value="des"> polka dotts</li>
+    <li><input type="checkbox" name="design" value="des"> stripes</li>
+    <li><input type="checkbox" name="design" value="des"> distressed</li>
+    <li><input type="checkbox" name="design" value="des"> tye dye</li>
+    <li><input type="checkbox" name="design" value="des"> dots</li>
+    <li><input type="checkbox" name="design" value="des"> hexagons</li>
+    <li><input type="checkbox" name="design" value="des"> oversized</li>
+
+<!-- added the number of shirts you can add here-->
+    Number
+    <p>How many custom shirts:
+        <select name="shirts" 
+        size="1">
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+         <option>6</option>
+        <!--more options here -->
+         </select>
+        </p>
+        
+    <p>
+    </fieldset>
+        <input type="submit" value="Bring me my gear!"><input type="reset"></p>
+</form> 
+</main>
+<!--using a paragraph, list, header and special content element in this website-->
+<main>
+<h1>Team History</h1>
+<h2>The Detroit Lions</h2>
+<p>An <em> electric and historic</em> NFL team that is currently making a name for themselves again.</p>
+<h2>History</h2>
+<ul><li>They have made the post season 17 times.   
+</li>
+<li>
+    They have had 14 hall of famers
+</li>
+<li>
+    They have won 9 playoff games
+</li></ul>
+<h2>Iconic Players</h2>
+<h1><img src="barry.jpeg" alt="barry "></h1> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<ul><li>Barry Sanders
+</li>
+<li>
+    Kelvin Johnson
+</li>
+<li>
+    Matthew Stafford
+</li></ul>
+
+</main>
+
+    <header>
+        <!-- added a time element-->
+  
+
+    <h1>The Football Fanatics News</h1>
+<h1>Very Informational</h1>
+
+
+    </header>
+
+   
+      
+  
+<!--added the dt and strong elements accordingly-->
+<main>
+
+        <h1><p>Summer Clothing Inventory Posted by FBF,<time datetime="2023-03-19">March, 19 2023</time></p></h1>
+        Our clothing designers have been working hard to give you guys the best styles and collections
+        For the upcoming summer season of the NFL.
+        <table> <!-- this is my table -->
+            <caption> <b> <ul> Pricing </ul></b> </caption>
+            <tr>
+            <th> <span>TOPS</span> </th> <!-- using span -->
+            <td> From $25 </td>
+            <td> to $75 </td>
+            </tr>
+            <tfoot>
+            <tr>
+            <th> BOTTOMS </th>
+            <td> From $25 </td>
+            <td> to $90 </td>
+            </tr>
+            </tfoot>
+            </table>
+     <aside>
+        <article>
+     <body>
+        <div id = "menu">
+        <section class = "title">
+         <h1>Items on the website</h1>
+        </section>
+
+        <section class = "Tops">
+        <h1>1<br>Lions Oversized Shirt</h1>
+        <p class = "info">Long and stylish. The lions oversized shirt gives you that oversized modern streetwear look</p>
+        <p class = "photo"> <img src="lionsshirt.jpeg" alt="picture of our newest piece"></p>
+        <p class = "price">$25</p>
+        </section>
+
+        <section class = "Tops2">
+            <h1>2<br>Lions Jacket</h1>
+            <p class = "info">Snug and furry. A jacket that will help keep you warm during those snowy winter games</p>
+            <p class = "photo"> <img src="lionsjacket.jpeg" alt="picture of our newest piece"></p>
+            <p class = "price">$75</p>
+        </section>
+
+        <section class = "Bottoms">
+            <h1>3<br>Lions Sweatpants</h1>
+            <p class = "info">Casual and comfy. The lions sweatpants give you a laid back way to support your favorite team</p>
+            <p class = "photo"> <img src="lionssweatpants.jpeg" alt="picture of our newest piece"></p>
+            <p class = "price">$35</p>
+        </section>
+
+        <section class = "Bottoms2">
+            <h1>4<br>Lions Shorts</h1>
+            <p class = "info">Fresh and cool. The lions shorts help you have on some short and breathable gear for the summer preseason</p>
+            <p class = "photo"> <img src="lionsshorts.jpeg" alt="picture of our newest piece"></p>
+            <p class = "price">$25</p>
+        </section>
+
+    </aside>
+</div>
+</body>
+</main>
+
+     <article>
+        
+    <h2><cite>Turning into a boss</cite></h2>
+    <!-- added a dfn,b, em,i,cite, q,and small element-->
+    <p>posted by FGF, <time datetime="2023-02-19">Febuary, 19 2023</time></p>
+    <p> <q>This week I will be explaing how to catch a<dfn>hail
+        marry</dfn> throw when you are running into the endzone.You run 
+        straight towards the endzone when the play is called and You
+        do not want to back pedal at all. You do not want to <b>trip</b> when you
+        turn your body for the catch <em>(that would be embarraesing.)</em> Then you 
+        put your hands up and catch it.</q> 
+    </p>
+    <footer>
+    <p>Next month, we will be showing you how to 
+        throw a touchdown taught by <i> Tom Brady</i>. To get a ticket,
+    contact us before <time datetime="2023-03-19">March 29 2023</time>.</p>
+    <p><div id = "about"> Location: Detroit, Michigan <br>Hours: Monday through Saturday 8 am to 9 pm; Sunday, 11 am to 5 pm <br> </div></p>
+    <!--Added a line break-->
+    <br>
+    <p>FGF@example.com
+    123-456-7890</p>
+    <!-- added the copyright symbol and the &copy sign accordingly-->
+    <p><small>Warning: If you are not physically fit, do not try this</small></p>
+    <p> <small>All content copyright &copy; 2023, Field Goal Fanatics </small> </p>
+    </article>
+</footer>
+
+
+</html>
